@@ -8,7 +8,7 @@ describe ThreeByFive do
         expect(ThreeByFive.find_all_numbers(9)).to eq(23)
       end
       it 'should numbers less than 1000' do
-        expect(ThreeByFive.find_all_numbers(999)).to eq(233168)
+        expect(ThreeByFive.find_all_numbers(999)).to eq(233_168)
       end
     end
   end

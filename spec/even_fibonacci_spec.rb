@@ -8,7 +8,7 @@ describe EvenFibonacciNumbers do
         expect(EvenFibonacciNumbers.find_fibonacci_number(10)).to eq(55)
       end
       it 'should be 1 for 1' do
-      expect(EvenFibonacciNumbers.find_fibonacci_number(1)).to eq(1)
+        expect(EvenFibonacciNumbers.find_fibonacci_number(1)).to eq(1)
       end
       it 'should be 5 for 5' do
         expect(EvenFibonacciNumbers.find_fibonacci_number(5)).to eq(5)
@@ -19,7 +19,7 @@ describe EvenFibonacciNumbers do
         expect(EvenFibonacciNumbers.even_numbers_less_than(83)).to eq(44)
       end
       it 'should return for terms less than 4 million' do
-        expect(EvenFibonacciNumbers.even_numbers_less_than(4000000)).to eq(4613732)
+        expect(EvenFibonacciNumbers.even_numbers_less_than(4_000_000)).to eq(4_613_732)
       end
     end
   end
