@@ -1,24 +1,24 @@
 #https://projecteuler.net/problem=4
 class LargestPalindromeNumber
 
-  def self.findLargestPalindromeNumber(digit)
-    returnNumber = 0
-    baseNumber = ''
+  def self.find_largest_palindrome_number(digit)
+    return_number = 0
+    base_number = ''
     #For each digit, add a nine. 2 digits = 99, 3 = 999
     for i in 1..digit
-      baseNumber << '9'
+      base_number << '9'
     end
-    baseNumber.to_i.downto(1) { |i|
-      baseNumber.to_i.downto(1) { |j|
-      if i * j > returnNumber && isPalindrome(i*j)
-        returnNumber = i*j
+    base_number.to_i.downto(1) { |i|
+      base_number.to_i.downto(1) { |j|
+      if i * j > return_number && is_palindrome(i*j)
+        return_number = i*j
       end
       }
     }
-    return returnNumber
+    return return_number
   end
 
-  def self.isPalindrome(s)
+  def self.is_palindrome(s)
     palindrome = true
     (0..(s.to_s.length-1)).each do |index|
       #the char in the loop should match the other side of the string

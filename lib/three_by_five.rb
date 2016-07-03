@@ -2,13 +2,13 @@
 class ThreeByFive
 
   #Add all numbers multiples of 3 or 5
-  def self.findAllNumbers(number)
-      returnNum = 0
+  def self.find_all_numbers(number)
+      return_num = 0
       1.upto(number)  { |i|
         if i % 3==0 || i % 5 == 0
-          returnNum += i
+          return_num += i
         end
       }
-    return returnNum
+    return return_num
   end
 end

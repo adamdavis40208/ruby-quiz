@@ -1,18 +1,18 @@
 #https://projecteuler.net/problem=3
 class LargestPrimeFactor
-  def self.findLargestPrimeFactor(number)
-    currentDivisor=2
-    largestDivisor=0
+  def self.find_largest_prime_factor(number)
+    current_divisor=2
+    largest_divisor=0
     while(number>1)
-      if(number % currentDivisor == 0)
-        largestDivisor=currentDivisor if largestDivisor<currentDivisor
-        number = number/largestDivisor
-        currentDivisor == 2
+      if(number % current_divisor == 0)
+        largest_divisor=current_divisor if largest_divisor<current_divisor
+        number = number/largest_divisor
+        current_divisor == 2
       else
-        currentDivisor+=1
+        current_divisor+=1
       end
     end
 
-    return largestDivisor
+    return largest_divisor
   end
 end
