@@ -6,6 +6,7 @@ Project Euler quizzes solved:
 * Problem 1-/lib/three_by_five.rb
 * Problem 2-/lib/even_fibonacci_numbers.rb
 * problem 3-/lib/largest_prime_factor.rb
+* problem 4-/lib/largest_palindrome_number.rb
 
 RubyQuiz 
 
