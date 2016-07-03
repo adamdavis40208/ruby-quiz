@@ -5,7 +5,7 @@ class LargestPalindromeNumber
     return_number = 0
     base_number = ''
     #For each digit, add a nine. 2 digits = 99, 3 = 999
-    for i in 1..digit
+    digit.times do
       base_number << '9'
     end
     base_number.to_i.downto(1) { |i|
@@ -22,7 +22,7 @@ class LargestPalindromeNumber
     palindrome = true
     (0..(s.to_s.length-1)).each do |index|
       #the char in the loop should match the other side of the string
-      if(s.to_s[index]!=s.to_s[(s.to_s.length-1)-index])
+      if s.to_s[index]!=s.to_s[(s.to_s.length-1)-index]
         palindrome = false
       end
     end

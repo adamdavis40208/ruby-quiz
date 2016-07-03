@@ -15,7 +15,7 @@ class EvenFibonacciNumbers
     return_val = 0
     output = 0
     i = 0
-    while(output < number) do
+    while output < number  do
       output = EvenFibonacciNumbers.find_fibonacci_number(i)
       puts 'output is ' + output.to_s
       if output %2 ==0
