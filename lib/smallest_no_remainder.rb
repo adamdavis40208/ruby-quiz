@@ -4,7 +4,7 @@ class SmallestNoRemainder
   def self.find_smallest_number_divisible_by_range(range)
     smallest_number = 1
     evenly_divided = false
-    while evenly_divided == false
+    while !evenly_divided
       1.upto(range) do |index|
         if smallest_number % index != 0
           evenly_divided = false

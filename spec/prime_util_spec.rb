@@ -2,7 +2,7 @@ require 'rspec'
 require_relative '../lib/utilities/prime_util'
 
 describe PrimeUtil do
-  describe ".prime?" do
+  describe '.prime?' do
     context 'This returns true or false if the number is prime' do
       [
           [2, true],[3, true],[5, true],[7, true],[11, true],[13, true],[17, true],[19, true],[23, true],
